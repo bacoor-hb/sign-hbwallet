@@ -14,7 +14,7 @@ This project was created by [HB Wallet](https://www.hb-wallet.com/).
 
 ## Available Function
 
-In the project directory, you can run:
+In the project directory, you can run :
 
 ### `onConnectWallet`
 
