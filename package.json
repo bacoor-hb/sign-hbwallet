@@ -1,0 +1,27 @@
+{
+  "name": "sign-hbwallet",
+  "version": "1.0.0",
+  "description": "Package support connection from your dapps website to Web3 in HBWallet",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bacoor-hb/sign-hbwallet.git"
+  },
+  "keywords": [
+    "web3",
+    "hbwallet",
+    "dapps",
+    "connection",
+    "wallet",
+    "metamask"
+  ],
+  "author": "Bacoor company",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bacoor-hb/sign-hbwallet/issues"
+  },
+  "homepage": "https://github.com/bacoor-hb/sign-hbwallet#readme"
+}
