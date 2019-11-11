@@ -80,7 +80,7 @@ export function onConnectWallet(currentWallet) {
 
         Promise.race([p1, p2]).then((networkCode) => {
           const networkParse = parseInt(networkCode)
-          const findNetwork = NETWORK_ETHER.find(itm => itm.key === networkCode)
+          const findNetwork = NETWORK_ETHER.find(itm => itm.key === networkParse)
 
           let network = findNetwork ? findNetwork.key : 'Unknown'
 
