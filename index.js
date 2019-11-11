@@ -1,7 +1,7 @@
 import { WEB3_STATUS, NETWORK_ETHER } from './constant'
 
 
-function onEnableWallet() {
+export function onEnableWallet() {
   return new Promise((resolve, reject) => {
     web3.currentProvider && web3.currentProvider.enable().then(function (accounts) {
       newStatus.status = WEB3_STATUS.Ready
@@ -26,7 +26,7 @@ function onEnableWallet() {
   }
 ------------------------------------------
 */
-function onConnectWallet(currentWallet) {
+export function onConnectWallet(currentWallet) {
   return new Promise(async (resolve, reject) => {
     let newStatus = Object.assign({}, currentWallet)
     try {
