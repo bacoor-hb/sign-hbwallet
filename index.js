@@ -1,7 +1,23 @@
-import { WEB3_STATUS, NETWORK_ETHER } from './constant'
+export const WEB3_STATUS = {
+  Loading: 'loading',
+  NoWeb3: 'noweb3',
+  Error: 'error',
+  Locked: 'locked',
+  ChangeAccount: 'changeaccount',
+  Ready: 'ready'
+}
+
+export const NETWORK_ETHER = [
+  { key: 1, type: 'Mainnet' },
+  { key: 2, type: 'Morden' },
+  { key: 3, type: 'Ropsten' },
+  { key: 4, type: 'Rinkeby' },
+  { key: 42, type: 'Kovan' },
+  { key: 5777, type: 'Private' }
+]
 
 
-export function onEnableWallet() {
+function onEnableWallet() {
   return new Promise((resolve, reject) => {
     web3.currentProvider && web3.currentProvider.enable().then(function (accounts) {
       newStatus.status = WEB3_STATUS.Ready
@@ -26,7 +42,7 @@ export function onEnableWallet() {
   }
 ------------------------------------------
 */
-export default function onConnectWallet(currentWallet) {
+export function onConnectWallet(currentWallet) {
   return new Promise(async (resolve, reject) => {
     let newStatus = Object.assign({}, currentWallet)
     try {
