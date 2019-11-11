@@ -26,7 +26,7 @@ export function onEnableWallet() {
   }
 ------------------------------------------
 */
-export function onConnectWallet(currentWallet) {
+export default function onConnectWallet(currentWallet) {
   return new Promise(async (resolve, reject) => {
     let newStatus = Object.assign({}, currentWallet)
     try {
