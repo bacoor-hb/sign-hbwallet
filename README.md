@@ -20,23 +20,27 @@ In the project directory, you can run:
 
 This will make a connect to Web3 Dapps in HBWallet .<br />
 This will return a status as object like
+```javascript
  {
     status: WEB3_STATUS constant,
     network: NETWORK_ETHER constant,
     address: Address of connected account
   }
+```
 
 ## Available Constant
 
 ### `NETWORK_ETHER`
+```javascript
   { key: 1, type: 'Mainnet' },
   { key: 2, type: 'Morden' },
   { key: 3, type: 'Ropsten' },
   { key: 4, type: 'Rinkeby' },
   { key: 42, type: 'Kovan' },
   { key: 5777, type: 'Private' }
-
+```
 ### `WEB3_STATUS`
+```javascript
 {
   Loading: 'loading',
   NoWeb3: 'noweb3',
@@ -45,6 +49,7 @@ This will return a status as object like
   ChangeAccount: 'changeaccount',
   Ready: 'ready'
 }
+```
 
 ## Usage example
 
