@@ -18,7 +18,7 @@ In the project directory, you can run:
 
 ### `onConnectWallet`
 
-This will make a connect to Web3 Dapps in HBWallet .<br />
+This will allow connection from your dapps website to Web3 in HBWallet .<br />
 This will return a status as object like
 ```javascript
  {
